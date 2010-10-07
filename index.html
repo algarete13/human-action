@@ -1,68 +1,54 @@
 <html>
 <head>
-	<title>Human Action</title>
-		<link type="text/css" href="human-action.css" rel="Stylesheet">
-		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.4.custom.css" rel="Stylesheet" />
-		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.4.custom.min.js"></script>
-		<script type="text/javascript">
-        function menudropdown(linkid,submenuid) {
-            $(submenuid).hide();
-	    $(linkid).bind('click', function() { 
-                if($(submenuid).is(':visible')) {
-                    $(submenuid).hide('blind',{},500,function(){}); 
-                } else {
-                    $(submenuid).show('blind',{},500,function(){});
-                }
-            });
-        }
-
-        $(document).ready(function() {
-            menudropdown('#mainlink1','#submenu1');
-            menudropdown('#mainlink2','#submenu2');
-            menudropdown('#mainlink3','#submenu3');
-        });
-
-		</script>
+  <title>Human Action</title>
+  <link type="text/css" href="human-action.css" rel="Stylesheet">
+  <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.4.custom.css" rel="Stylesheet" />
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.4.custom.min.js"></script>
+  <script type="text/javascript">
+//        function menudropdown(linkid,submenuid) {
+//            $(submenuid).hide();
+//	    $(linkid).bind('click', function() { 
+//                if($(submenuid).is(':visible')) {
+//                    $(submenuid).hide('blind',{},500,function(){}); 
+//                } else {
+//                    $(submenuid).show('blind',{},500,function(){});
+//                }
+//            });
+//        }
+//
+//        $(document).ready(function() {
+//            menudropdown('#projects','#project-menus');
+//            menudropdown('#art-media','#art-media-menus');
+//        });
+  </script>
 </head>
 <body>
-   <div id="menu">
-	   <p id ="menu_p"><a href="#">news</a></p>
-	 </div>
-   <div id="menu">
-	   <p id ="menu_p"><a href="#">about</a></p>
-	 </div>
-	 <div id="menu">
-     <p id ="menu_p"><a href="#" id="mainlink1">projects</a></p>
-	 </div>
-   <div id="submenu1">
-     <p id="submenu_p"><a href="#">eHUB learning center</a></p>
-     <p id="submenu_p"><a href="#">pharosnet</a></p>
+  <div id="body-center">
+    <div id="logo-center">
+      <img src="img/human-action-intro-logo.jpg" alt="Human Action" />
+      </div>
+    <div class="menu">
+      <p class="menu_p"><a href="#">news</a></p>
+    </div>
+    <div class="menu">
+      <p class="menu_p"><a href="#">about</a></p>
+    </div>
+    <div class="menu">
+      <p class="menu_p"><a href="#">projects</a></p>
+    </div>
+    <div class="menu">
+      <p class="menu_p"><a href="#">art+media</a></p>
+    </div>
+    <div class="menu">
+      <p class="menu_p"><a href="#">blog</a></p>
+    </div>
+    <div class="menu">
+      <p class="menu_p"><a href="#">support</a></p>
+    </div>
+    <div class="menu">
+      <p class="menu_p"><a href="#">contact</a></p>
+    </div>
   </div>
-	<div id="menu">
-		<p id ="menu_p"><a href="#" id="mainlink2">art+media</a></p>
-	</div>
-   <div id="submenu2">
-		<p id="submenu_p"><a href="#">film</a></p>
-		<p id="submenu_p"><a href="#">music</a></p>
-		<p id="submenu_p"><a href="#">events</a></p>
-		<p id="submenu_p"><a href="#">images</a></p>
-	</div>
-  <div id="menu">
-	   <p id ="menu_p"><a href="#">blog</a></p>
-	</div>
-  <div id="menu">
-	   <p id ="menu_p"><a href="#">donate</a></p>
-	</div>
-	<div id="menu">
-		<p id ="menu_p"><a href="#" id="mainlink3">info</a></p>
-	</div>
-	<div id="submenu3">
-		<p id="submenu_p"><a href="#">philosophy</a></p>
-		<p id="submenu_p"><a href="#">human actors</a></p>
-		<p id="submenu_p"><a href="#">press</a></p>
-		<p id="submenu_p"><a href="#">contact</a></p>
-		<p id="submenu_p"><a href="#">opportunities</a></p>
-	</div>
 </body>
 </html>
